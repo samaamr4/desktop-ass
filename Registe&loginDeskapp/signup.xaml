@@ -1,0 +1,64 @@
+﻿<Page x:Class="Registe_loginDeskapp.signup"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Registe_loginDeskapp"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="700"
+      Title="signup">
+
+    <Grid Background="Bisque">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+            <RowDefinition/>
+            <RowDefinition/>
+
+            <RowDefinition/>
+
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="1" Style="{StaticResource labels}" >Signup</Label>
+        <Label Grid.Row="1"  Style="{StaticResource labels}">Username</Label>
+        <Label Grid.Row="2" Style="{StaticResource labels}">Password</Label>
+        <Label Grid.Row="3" Style="{StaticResource labels}">Age</Label>
+        <Label Grid.Row="4"  Style="{StaticResource labels}">Gender</Label>
+        <Label Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Style="{StaticResource labels}">male</Label>
+        <Label Grid.Row="4" Grid.Column="1" VerticalAlignment="Top" Style="{StaticResource labels}">female</Label>
+        <Label Grid.Row="5"  Style="{StaticResource labels}" >Phone Number</Label>
+        <Label Grid.Row="6"  Style="{StaticResource labels}">City</Label>
+        <TextBox Name="usernametxt" Grid.Row="1" Grid.Column="1" Style="{StaticResource textboxs}" ></TextBox>
+        <TextBox Name="passtxt" Grid.Row="2" Grid.Column="1" Style="{StaticResource textboxs}" ></TextBox>
+        <TextBox Name="agetxt" Grid.Row="3" Grid.Column="1" Style="{StaticResource textboxs}" ></TextBox>
+        <Button  Grid.Row="7" Grid.Column="0" Style="{StaticResource buttons}" Click="Button_Click">Signup</Button>
+        <RadioButton HorizontalAlignment="Left" Grid.Row="4" Grid.Column="1" Style="{StaticResource radio}" Checked="RadioButton_Checked"></RadioButton>
+        <RadioButton HorizontalAlignment="Center" Grid.Row="4" Grid.Column="1" Style="{StaticResource radio}" Checked="RadioButton_Checked_1"></RadioButton>
+        <TextBox Name="phonetxt" Grid.Row="5" Grid.Column="1" Style="{StaticResource textboxs}" ></TextBox>
+        <ComboBox Grid.Row="6" Grid.Column="1" Name="comb" Style="{StaticResource combochoose}">
+            <ComboBoxItem>
+                Cairo
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Qatar
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Menofia
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Giza
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Suiz
+            </ComboBoxItem>
+        </ComboBox>
+    </Grid>
+</Page>

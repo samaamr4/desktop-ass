@@ -1,0 +1,42 @@
+﻿<Application x:Class="Registe_loginDeskapp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Registe_loginDeskapp"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="buttons" TargetType="Button">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Background" Value="Chocolate"/>
+        </Style>
+        <Style x:Key="labels" TargetType="Label">
+            <Setter Property="Width" Value="120"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="FontFamily" Value="29"/>
+            <Setter Property="Foreground" Value="BlueViolet"/>
+        </Style>
+        <Style x:Key="labelschoose" TargetType="Label">
+            <Setter Property="Width" Value="500"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="Margin" Value="10,10,10,10"/>
+        </Style>
+        <Style x:Key="textboxs" TargetType="TextBox">
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="BorderBrush" Value="Aqua"/>
+        </Style>
+        <Style x:Key="radio" TargetType="RadioButton">
+            <Setter Property="Width" Value="50"/>
+            <Setter Property="Height" Value="30"/>
+        </Style>
+        <Style x:Key="combos" TargetType="ComboBox">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="50"/>
+        </Style>
+        <Style x:Key="combochoose" TargetType="ComboBox">
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="50"/>
+        </Style>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,35 @@
+﻿<Page x:Class="Registe_loginDeskapp.signin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Registe_loginDeskapp"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="700"
+      Title="signin">
+
+    <Grid Background="Bisque">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="1" Style="{StaticResource labels}">signin</Label>
+        <Label Grid.Row="1"  Style="{StaticResource labels}">Username</Label>
+        <Label Grid.Row="2" Style="{StaticResource labels}">Password</Label>
+        <Label Grid.Row="3" Style="{StaticResource labels}">Age</Label>
+        <TextBox Name="usernametxt" Grid.Row="1" Grid.Column="1" Style="{StaticResource textboxs}" ></TextBox>
+        <TextBox Name="passtxt" Grid.Row="2" Grid.Column="1" Style="{StaticResource textboxs}" ></TextBox>
+        <TextBox Name="agetxt" Grid.Row="3" Grid.Column="1" Style="{StaticResource textboxs}" ></TextBox>
+        <Button  Grid.Row="4" Grid.Column="0" Style="{StaticResource buttons}" Click="Button_Click">Signin</Button>
+        <Button  Grid.Row="4" Grid.Column="1" Style="{StaticResource buttons}" Click="Button_Click_1">signup</Button>
+        <Button  Grid.Row="4" Grid.Column="2" Style="{StaticResource buttons}" Click="Button_Click_2">Forget Password</Button>
+    </Grid>
+</Page>
